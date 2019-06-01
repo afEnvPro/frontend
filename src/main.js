@@ -1,23 +1,17 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router'
+import store from './store'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 
-import routers from './router/routers'
-import VueRouter from 'vue-router'
-Vue.use(VueRouter)
+// require styles
+import 'swiper/dist/css/swiper.css'
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
 
-const router = new VueRouter({
-    mode: 'hash',
-    routes: routers,
-    scrollBehavior(to, from, savedPosition) {
-        if (savedPosition) {
-            return savedPosition
-        }
-        return { x: 0, y: 0 }
-    }
-})
+Vue.config.productionTip = false
 
 new Vue({
-  el: '#app',
-	router,
+  router,
+  store,
   render: h => h(App)
-})
+}).$mount('#app')
