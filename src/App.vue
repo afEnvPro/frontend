@@ -110,10 +110,10 @@ export default {
   }
 
   #menu {
-    padding: 0 100px;
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
-    max-width:1280px;
+    /* max-width:1280px; */
     margin: 0 auto;
   }
   #logo{
@@ -123,6 +123,8 @@ export default {
   #nav {
     line-height: 112px;
     padding-right: 80px;
+    font-size: 14px;
+    min-width: 554px;
   }
 
   #nav a {

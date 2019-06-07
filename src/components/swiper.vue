@@ -1,6 +1,6 @@
 <template>
   <swiper :options="swiperOption">
-    <swiper-slide v-for="(slide, index) in swiperSlides" :key="index"><img src="../assets/images/banner.jpg" alt=""></swiper-slide>
+    <swiper-slide v-for="(slide, index) in swiperSlides" :key="index"><img src="../assets/images/banner.png" alt=""></swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
   </swiper>
 </template>
@@ -30,6 +30,6 @@
 </script>
 <style scoped>
 img{
-   /* width: 100% */
+   width: 100%
 }
 </style>
