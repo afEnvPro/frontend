@@ -1,5 +1,3 @@
 <template>
-  <div class="about">
-    <h1>This is an Media report page</h1>
-  </div>
+    <router-view />
 </template>

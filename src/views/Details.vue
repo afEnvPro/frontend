@@ -1,5 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an details page</h1>
+    <h1>详情页</h1>
   </div>
 </template>
+<script>
+  export default {
+    data() {
+      return {
+        
+      }
+    },
+    mounted(){
+    }
+  }
+</script>
