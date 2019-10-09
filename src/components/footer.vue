@@ -41,6 +41,7 @@ export default {
     #footer{
         height: 115px;
         background: #8dc21f;
+        min-width: 1200px;
     }
     #footer>.wrap{
         /* max-width: 1280px; */

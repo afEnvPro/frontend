@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
+  <div id="head">
     <header id="header"></header>
     <div id="menu">
       <div id="logo">
-        <img src="./assets/images/logo.jpg" alt="">
+        <img src="../assets/images/logo.jpg" alt="">
       </div>
       <div id="nav">
-        <router-link to="/" exact>首页</router-link>
+        <router-link to="/">首页</router-link>
         <router-link to="/about">关于我们</router-link>
         <router-link to="/service">我们的服务</router-link>
         <router-link to="/activity">活动</router-link>
@@ -15,94 +15,18 @@
       </div>
     </div>
     <swiper class="banner"></swiper>
-
-    <router-view />
-    <footer-vue></footer-vue>
   </div>
 </template>
 <script>
-// @ is an alias to /src
 import swiper from '@/components/swiper.vue'
-import footerVue from '@/components/footer.vue'
-
 export default {
-  name: 'home',
   components: {
-    swiper,
-    footerVue
+    swiper
   }
 }
 </script>
-
-<style>
-  body,
-  ul,
-  ol,
-  li,
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  form,
-  fieldset,
-  table,
-  td,
-  img,
-  div {
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
-
-  body {
-    background: #fff;
-    color: #333;
-    font-size: 12px;
-    font-family: "”Microsoft YaHei";
-  }
-
-  ul,
-  ol {
-    list-style-type: none;
-  }
-
-  select,
-  input,
-  img,
-  select {
-    vertical-align: middle;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  a:link {
-    color: #009;
-  }
-
-  a:visited {
-    color: #800080;
-  }
-
-  a:hover,
-  a:active,
-  a:focus {
-    color: #c00;
-    text-decoration: underline;
-  }
-
-  #app {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-  }
-
-  #header {
+<style scoped>
+    #header {
     height: 45px;
     background: #8dc21f;
     min-width: 1200px;
@@ -132,10 +56,11 @@ export default {
     margin-right: 30px;
   }
 
-  #nav a.router-link-active {
+  #nav a.router-link-exact-active {
     color: #42b983;
   }
   .banner{
     min-width: 1200px;
   }
 </style>
+
