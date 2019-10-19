@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>This is an join us page</h1>
+    <h1>加入我们</h1>
   </div>
 </template>
