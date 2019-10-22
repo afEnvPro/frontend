@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<meta name="keywords" content="爱芬环保,公益组织,环保,筹款" />
-    <meta name="description" content="上海静安区爱芬环保科技咨询服务中心。" />
+    <meta name="keywords" content="爱芬环保,公益组织,环保,筹款"/>
+    <meta name="description" content="上海静安区爱芬环保科技咨询服务中心。"/>
+    <link rel="stylesheet" href="./res/layui/css/layui.css">
+    <link rel="stylesheet" href="./res/static/css/index.css">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>aifen-front-end</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but aifen-front-end doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277691337' style='display:none;' %3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1277691337' type='text/javascript'%3E%3C/script%3E"));</script>
-  </body>
+    <title>爱芬环保</title>
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but aifen-front-end doesn't work properly without JavaScript enabled. Please enable it to
+        continue.</strong>
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+document.write(unescape("%3Cspan id='cnzz_stat_icon_1277691337' style='display:none;' %3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1277691337' type='text/javascript'%3E%3C/script%3E"));</script>
+<script src="./res/layui/layui.js"></script>
+<!--[if lt IE 9]>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+    layui.config({
+        base: './res/static/js/'
+    }).use('firm');
+</script>
+</body>
 </html>
