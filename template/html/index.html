@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
   <title>首页</title>
   <link rel="stylesheet" href="../res/layui/css/layui.css">
   <link rel="stylesheet" href="../res/static/css/index.css">
 </head>
+
 <body>
   <!-- nav部分 -->
-  <div class="nav index">
+  <div class="nav">
     <div class="layui-container">
       <!-- 公司logo -->
       <div class="nav-logo">
@@ -22,8 +25,8 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="layui-nav" lay-filter="">
-        	<li class="layui-nav-item"><a href="index.html">首页</a></li>
-        	<li class="layui-nav-item"><a href="about.html">关于我们</a></li>
+          <li class="layui-nav-item"><a href="index.html">首页</a></li>
+          <li class="layui-nav-item"><a href="about.html">关于我们</a></li>
           <li class="layui-nav-item"><a href="product.html">我们的服务</a></li>
           <li class="layui-nav-item"><a href="case.html">活动</a></li>
           <li class="layui-nav-item"><a href="news.html">媒体报道</a></li>
@@ -37,36 +40,35 @@
       <div carousel-item>
         <div>
           <img src="../res/static/img/banner1.jpg">
-          <div class="panel">
+          <div class="panel" style="display: none">
             <p class="title">文字文字</p>
             <p>文字文字文字</p>
           </div>
         </div>
         <div>
           <img src="../res/static/img/banner2.jpg">
-          <div class="panel">
-            <p class="title">文字文字</p>
-            <p>文字文字文字</p>
-          </div>
+        </div>
+        <div>
+          <img src="../res/static/img/banner3.jpg">
         </div>
       </div>
     </div>
   </div>
   <!-- main部分 -->
   <div class="main-product">
-  	 <div class="layui-container" style="overflow:hidden;">
-  		<div class="layui-col-sm4"></div>
-  		<div class="layui-col-sm6">
+    <div class="layui-container" style="overflow:hidden;">
+      <div class="layui-col-sm4"></div>
+      <div class="layui-col-sm6">
 
-  		
-  		</div>
+
+      </div>
     </div>
     <div class="layui-container">
       <p class="title"><span>爱芬环保</span>致力于推动城市垃圾分类进程</p>
       <div class="layui-row layui-col-space25">
         <div class="layui-col-sm6 layui-col-md3">
           <div class="content">
-            <img src="../res/static/img/af.png" style="width: 68%; height: auto;">           
+            <img src="../res/static/img/af.png" style="width: 68%; height: auto;">
           </div>
         </div>
         <div class="layui-col-sm6 layui-col-md3 ">
@@ -144,27 +146,30 @@
         <div class="layui-col-sm10 layui-col-lg11">
           <div class="layui-row">
             <div class="layui-col-sm6 layui-col-md8 layui-col-lg9">
-              <p class="contact-top"><i class="layui-icon layui-icon-cellphone"></i>&nbsp;400-8888888&nbsp;&nbsp;(9:00-18:00)</p>
+              <p class="contact-top"><i
+                  class="layui-icon layui-icon-cellphone"></i>&nbsp;400-8888888&nbsp;&nbsp;(9:00-18:00)</p>
               <p class="contact-bottom"><i class="layui-icon layui-icon-home"></i>&nbsp;88888888@163.com</span></p>
             </div>
             <div class="layui-col-sm6 layui-col-md4 layui-col-lg3">
               <p class="contact-top"><span class="right">该网站版权归 <a href="#" target="_blank">爱芬环保</a> 所有</span></p>
-              <p class="contact-bottom"><span class="right">Copyright&nbsp;©&nbsp;2016-2018&nbsp;&nbsp;ICP&nbsp;备888888号</span></p>
+              <p class="contact-bottom"><span
+                  class="right">Copyright&nbsp;©&nbsp;2016-2018&nbsp;&nbsp;ICP&nbsp;备888888号</span></p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-<script src="../res/layui/layui.js"></script>
-<!--[if lt IE 9]>
+  <script src="../res/layui/layui.js"></script>
+  <!--[if lt IE 9]>
   <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
   <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-<script>
-  layui.config({
-    base: '../res/static/js/' 
-  }).use('firm'); 
-</script>
+  <script>
+    layui.config({
+      base: '../res/static/js/'
+    }).use('firm'); 
+  </script>
 </body>
+
 </html>
